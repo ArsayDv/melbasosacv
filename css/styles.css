@@ -430,6 +430,9 @@ html::-webkit-scrollbar-thumb{
     .education{
         padding-right: 0;
     }
+    .education p{
+        padding: 20px;
+    }
     .education-container{
         grid-template-columns: 1fr;
     }
