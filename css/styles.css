@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+/*     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 2rem; */
+    --title-bg: #272727;
+    --bg: #292929;
+    --clip-path: #b8a182;
+    --rhombus: #c2ab8a;
+    --red: #e60000;
+    --black: #222;
+    --white: #fff;
+    --light-color: #666;
+    --light-bg: #eee;
+    --border: .2rem solid rgb(129, 129, 129);
+    --box-shadow: -4px 0.5rem 0.5rem rgba(0, 0, 0, .3);
+}
+
+.mt-1{
+    margin-top: 1rem;
+}
+
+.mt-2{
+    margin-top: 2rem;
+}
+
+.mt-3{
+    margin-top: 3rem;
+}
+
+.mt-4{
+    margin-top: 4rem;
+}
+
+.mt-5{
+    margin-top: 5rem;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--red);
+}
+
+.bars{
+    font-size: x-large;
+    display: none;
+}
+
+.box-container,
+.container{
+    padding: 3rem 9%;
+}
+
+.title{
+    font-weight: 600;
+    color: var(--white);
+    padding: 20px;
+    font-size: 3.5rem;
+    background: var(--title-bg);
+    text-align: center;
+    text-transform: none;
+}
+
+.header{
+    z-index: 10000;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+
+.header .brand{
+    font-size: 2rem
+}
+
+.nav a{
+    padding: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.heading{
+    padding-top: 70px;
+}
+
+.heading::after{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    background-color: var(--clip-path);
+    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0); 
+    clip-path: polygon(50% 100%, 0 0, 100% 0);;
+}
+
+/* Various Section */
+
+.various .box-container{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.various .box-container .box{
+    width: 100%;
+    height: 100%;
+    box-shadow: var(--box-shadow);
+}
+
+.various .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.various .demos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.various .demos .demo{
+    width: 100%;
+    object-fit: contain
+}
+
+.various .demos .demo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Presentation Section */
+.melbasosa{
+    background: var(--bg);
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.melbasosa .rhombus{
+    margin: 0 auto;
+    padding: 15% 5%;
+    color: var(--white);
+    background-color: var(--rhombus);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.melbasosa .rhombus h1{
+    text-transform: none;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+/* About Section */
+.about{
+    margin-top: 15px;
+}
+
+.content h1,
+.content h2{
+    font-weight: 600;
+    color: var(--rhombus);
+    text-transform: uppercase;
+    font-size: 100%;
+}
+
+.content{
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+
+.content p{
+    line-height: 1.3;
+}
+
+.list-programs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.list-programs .list-content{
+    margin-top: 20px;
+}
+
+.education-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.education{
+    padding-right: 60px;
+}
+
+.contact-div{
+    display: flex;
+    align-items: center;
+    background: var(--bg);
+    width: max-content;
+    margin: 50px auto;
+}
+
+.contact-div::before{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 100px;
+    position: relative;
+    background-color: var(--clip-path);
+    -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+
+}
+
+.contact-content{
+    padding: 40px;
+    color: var(--white);
+}
+
+.contact-div h1{
+    color: var(--white);
+    font-size: 2.5rem;
+}
+
+.contact-div p{
+    margin-top: 10px;
+    font-size: 2rem;
+    text-transform: none;
+}
+
+.laboral{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.laboral-start{
+    margin: 20px 0;
+}
+
+.packaging .box-container{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.packaging .box-container .box{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.packaging .box-container .box img{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* Catalogues */
+.catalogues .box-container{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.catalogues .box-container .box{
+    width: 100%;
+    height: 100%;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+}
+
+.catalogues .box-container .box img{
+    width: 100%;
+    height: 100%;
+}
+
+.catalogues .container{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.catalogues .container .img__w{
+    width: 100%;
+  
+  object-fit: contain;  height: 475px;
+}
+
+/* Logotipos */
+.logotipos .box-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logotipos .box-container .box{
+    width: 500px;
+    height: auto;
+}
+
+.logotipos .box-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Impresos */
+.impresos .box-container,
+.impresos-2 .box-container,
+.impresos-3 .box-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+
+.impresos .box-container .box,
+.impresos-2 .box-container .box,
+.impresos-3 .box-container .box{
+    width: auto;
+    height: auto;
+}
+
+.impresos .box-container .box img,
+.impresos-2 .box-container, .box img,
+.impresos-3 .box-container .box img{
+    width: 100%;
+    height: 100%;
+}
+
+.impresos-4 .box-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.impresos-4 .box-container .box{
+    width: 100%;
+    height: auto;
+    box-shadow: var(--box-shadow);
+}
+
+.impresos-4 .box-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px){
+    .brand{
+        background: #fff;
+        z-index: 10000;
+        flex-grow: 1;
+    }
+    .bars{
+        background: #fff;
+        z-index: 10000;
+        width: 50%;
+        text-align: right;
+        display: block;
+    }
+    .nav a:hover{
+        background: rgb(204, 204, 204);
+    }
+    .nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-top: var(--border);
+        position: absolute;
+        left: -10000px;
+        transition: all 400ms ease;
+    }
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .responsive{
+        background: #fff;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .various .box-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .packaging .box-container{
+        grid-template-columns: 1fr;
+    }
+    .about{
+        text-align: center;
+    }
+    .contact::before{
+        position: absolute;
+    }
+    .about .programs .list-programs{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .about .contact-content{
+        padding: 40px 0 !important;
+        width: 100%
+    }
+    .about .programs .list-programs .contact{
+        text-align: center;
+        width: 100%
+    }
+    .about .laboral{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .catalogues .box-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .catalogues .box-container .box{
+        width: 48%;
+    }
+    .catalogues .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .catalogues .container .box{
+        width: auto;
+    }
+    .impresos .box-container, .impresos-2 .box-container, .impresos-3 .box-container{
+        grid-template-columns: 1fr;
+    }
+    .impresos .box-container .box, .impresos-2 .box-container .box, .impresos-3 .box-container .box{
+        box-shadow: var(--box-shadow);
+    }
+    .packaging .box-container .box{
+        width: 100%;
+        height: 100%;
+    }
+    .packaging .box-container .box img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain !important;
+    }
+    .melbasosa .rhombus{
+        font-size: 2.7rem;
+        padding: 20% 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .various .box-container{
+        grid-template-columns: 1fr;
+    }
+    .various .demos{
+        grid-template-columns: 1fr;
+    }
+    .melbasosa .rhombus{
+        padding: 20% 5%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .melbasosa .rhombus h1{
+        font-size: 2.5rem;
+    }
+    .melbasosa .rhombus{
+        padding: 20% 10%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact::before{
+        display: none;
+    }
+    .contact h1{
+        color: var(--clip-path)
+    }
+    .logotipos .box-container .box{
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+.nav.active{
+    left: 0;
+    position: relative;
+}
