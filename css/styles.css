@@ -514,15 +514,50 @@ html::-webkit-scrollbar-thumb{
 }
 
 @media screen and (max-width: 500px) {
-    .contact::before{
+    /* .contact-div::before{
         display: none;
     }
     .contact h1{
         color: var(--clip-path)
-    }
+    } */
     .logotipos .box-container .box{
         width: 100%;
         padding: 20px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .contact-div::before{
+        display: none;
+    }
+    .contact h1{
+        color: #fff;
+    }
+    .contact-div p{
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .contact-content h1{
+        width: 100%;
+        text-align: center;
+    }
+    .contact-div p{
+        text-align: center;
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .contact-div h1{
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 275px){
+    .contact-div p{
+        font-size: 60%;
     }
 }
 
