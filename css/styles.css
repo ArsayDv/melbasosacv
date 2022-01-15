@@ -427,6 +427,12 @@ html::-webkit-scrollbar-thumb{
 }
 
 @media screen and (max-width: 992px) {
+    .education{
+        padding-right: 0;
+    }
+    .education-container{
+        grid-template-columns: 1fr;
+    }
     .various .box-container{
         grid-template-columns: 1fr 1fr;
     }
